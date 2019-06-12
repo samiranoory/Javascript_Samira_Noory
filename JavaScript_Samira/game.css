@@ -1,0 +1,85 @@
+/*game.css stylesheet*/
+
+body /*i hela hemsidan, vill vi ha detta typsnitt på texten*/
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+#websitebox /*I denna div ingår hela quizet. all kod under denna är indragen*/
+{
+    margin: 110px auto;
+    padding: 50px 30px; /*padding och margin gör så att quizet finns i mitten av hemsidan*/
+    width:55%;
+    background-color: purple;
+    color: white;
+    box-shadow: 0 0 15px 0 #999; /*den svarta skuggan runt om diven*/
+    border-radius:3px;
+}
+
+
+    h1 { /*titeln skall vara i mitten*/
+        text-align: center;
+      }
+
+      .choise
+      {
+            height: 25px;
+            width: 80px;
+            background-color: purple;
+            box-shadow: 0 0 10px 0 rgb(255,255,255); /*wvit rgb färg*/
+            margin: 0 2px 0 2px;
+            cursor: pointer;
+            text-align: center;
+            float:right;
+      }
+
+                .choise a /*texten till choise, previous och next boxarna*/
+                {
+                      line-height: 25px;
+                      text-decoration: none;
+                      color: white;
+                }
+
+
+
+      #previousq
+      {
+            display:none;
+      }
+
+      #start
+      {
+          display:none;
+          width: 100px;
+      }
+
+
+
+      ul /*unordered list har gjorts i javafilen*/
+      {
+            width: 500px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /*ingen margin och padding i svarsalternativboxarna*/
+      }
+
+            ul li /*här fixas så att unordered list hamnar i boxar*/
+            {
+                  display: inline-block;
+                  width: 200px;
+                  background: purple;
+                  color: white;
+                  box-shadow: 0 0 10px 0 rgb(255,255,255); /*wvit rgb färg*/
+                  margin: 10px;
+                  padding: 5px;
+            }
+
+
+
+        input[type="radio"] /*vad e detta*/
+        {
+            cursor: pointer;
+        }
